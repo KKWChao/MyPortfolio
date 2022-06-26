@@ -28,7 +28,3 @@ code {
 .nav-text {
   color: var(--color3) !important;
 }
-
-.body-background {
-  background-color: var(--color5);
-}
