@@ -1,45 +1,46 @@
-import React, { useState } from "react";
-import { validateEmail } from '../../utils/helpers';
+import React from "react";
+import { Form, Button, Row, Col } from 'react-bootstrap'
+// import { validateEmail } from '../../utils/helpers';
 
 function ContactForm() {
-  const [formState, setFormState] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-  const { name, email, message } = formState;
-  const [errorMessage, setErrorMessage] = useState('');
+  // const [formState, setFormState] = useState({
+  //   name: "",
+  //   email: "",
+  //   message: "",
+  // });
+  // const { name, email, message } = formState;
+  // const [errorMessage, setErrorMessage] = useState('');
 
-  function handleChange(e) {
-    setFormState({ ...formState, [e.target.name]: e.target.value });
+  // function handleChange(e) {
+  //   setFormState({ ...formState, [e.target.name]: e.target.value });
 
-    if (e.target.name === 'email') {
-      const isValid = validateEmail(e.target.value);
-      console.log(isValid);
-    } else {
-      if (!e.target.value.length) {
-        setErrorMessage(`${e.target.name} is required.`);
-      } else {
-        setErrorMessage('');
-      }
-    }
+  //   if (e.target.name === 'email') {
+  //     const isValid = validateEmail(e.target.value);
+  //     console.log(isValid);
+  //   } else {
+  //     if (!e.target.value.length) {
+  //       setErrorMessage(`${e.target.name} is required.`);
+  //     } else {
+  //       setErrorMessage('');
+  //     }
+  //   }
 
-    if (!errorMessage) {
-      setFormState({ ...formState, [e.target.name]: e.target.value });
-    }
-  }
+  //   if (!errorMessage) {
+  //     setFormState({ ...formState, [e.target.name]: e.target.value });
+  //   }
+  // }
 
-  console.log(formState);
+  // console.log(formState);
 
-  function handleSubmit(e) {
-    e.preventDefault();
-    console.log(formState);
-  }
+  // function handleSubmit(e) {
+  //   e.preventDefault();
+  //   console.log(formState);
+  // }
 
   return (
     <section>
-      <h1>Contact me</h1>
-      <form id="contact-form" onSubmit={handleSubmit}>
+      <h3>Contact me</h3>
+      {/* <form id="contact-form" onSubmit={handleSubmit}>
         <div>
           <label htmlFor="name">Name:</label>
           <input
@@ -73,9 +74,62 @@ function ContactForm() {
           </div>
         )}
         <button type="submit">Submit</button>
-      </form>
+      </form> */}
+      <Form>
+        <Row className="mb-3">
+          <Form.Group as={Col} md="4" controlId="validationCustom01">
+            <Form.Label>First name</Form.Label>
+            <Form.Control
+              required
+              type="text"
+              placeholder="First name"
+              />
+            <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
+          </Form.Group>
+
+          <Form.Group as={Col} md="4" controlId="validationCustom02">
+            <Form.Label>Last name</Form.Label>
+            <Form.Control
+              required
+              type="text"
+              placeholder="Last name"
+              />
+            <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
+          </Form.Group>
+
+          <Form.Group as={Col} md="4" controlId="formBasicEmail">
+            <Form.Label>Email address</Form.Label>
+            <Form.Control 
+              required
+              type="email" 
+              placeholder="Enter email"
+              />
+
+            <Form.Text className="text-muted">
+              We'll never share your email with anyone else.
+            </Form.Text>
+          </Form.Group>
+        </Row>
+
+        <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
+          <Form.Label>Message</Form.Label>
+          <Form.Control as="textarea" rows={3} 
+            required pattern=".+@.+\.com"
+            type="text"
+            placeholder="Enter your message here!"
+            />
+          <Form.Control.Feedback type="invalid">Please provide a valid email.</Form.Control.Feedback>
+        </Form.Group>
+
+        <Button variant="primary" type="submit">
+          Submit
+        </Button>
+      </Form>
     </section>
   );
 }
+
+
+
 
 export default ContactForm;
