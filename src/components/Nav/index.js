@@ -9,12 +9,12 @@ import { Link } from 'react-router-dom'
 
 function Navigation() {
   return (
-    <Navbar className="nav-background" expand="lg">
+    <Navbar className="nav-background nav-text" expand="lg">
       <Container>
-        <Navbar.Brand as={Link} to="/" className="nav-text">KC</Navbar.Brand>
+        <Navbar.Brand as={Link} to="/" className="nav-text nav-logo">KC</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ms-auto">
+          <Nav className="ml-auto">
             <Nav.Link as={Link} to="/" className="nav-text">Home</Nav.Link>
             <Nav.Link as={Link} to="/projects" className="nav-text">Projects</Nav.Link>
             <Nav.Link as={Link} to="/about" className="nav-text">About</Nav.Link>

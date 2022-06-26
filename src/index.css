@@ -21,10 +21,20 @@ code {
   --color5: #A99985;
 }
 
+.nav-logo {
+  border: 2px solid;
+  padding: 0.5em;
+  border-radius: 0.5em;
+}
+
 .nav-background {
   background-color: var(--color1);
 }
 
 .nav-text {
   color: var(--color3) !important;
+}
+
+.navbar-toggler {
+  background-color: var(--color3) !important;
 }
