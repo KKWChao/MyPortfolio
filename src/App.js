@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import Navigation from './components/Nav/index'
 import Footer from './components/Footer/index'
 import { About } from "./components/About/index";
-import { Projects } from "./components/Projects/index";
+import  Projects  from "./components/Projects/index";
 import { Resume } from "./components/Resume/index"
 import  Contact from "./components/Contact/index.js";
 import { NoMatch } from "./components/NoMatch/index";

@@ -1,5 +1,6 @@
 import React from "react";
 import { Form, Button, Row, Col } from 'react-bootstrap'
+import { Jumbopart } from '../About'
 // import { validateEmail } from '../../utils/helpers';
 
 function ContactForm() {
@@ -39,6 +40,7 @@ function ContactForm() {
 
   return (
     <section className="m-2 p-2 d-flex flex-column min-vh-100">
+      { Jumbopart() }
       <h3>Contact me</h3>
       {/* <form id="contact-form" onSubmit={handleSubmit}>
         <div>
