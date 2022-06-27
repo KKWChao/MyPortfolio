@@ -18,13 +18,13 @@ function App() {
         <Navigation />
         <Layout>
           <Routes>
-            <Route path="/" element={<About />} />
+            <Route path="/MyPortfolio/" element={<About />} />
 
-            <Route path="/projects" element={<Projects />} />
+            <Route path="/MyPortfolio/projects" element={<Projects />} />
 
-            <Route path="/resume" element={<Resume />} />
+            <Route path="/MyPortfolio/resume" element={<Resume />} />
 
-            <Route path="/contact" element={<Contact />} />
+            <Route path="/MyPortfolio/contact" element={<Contact />} />
 
             <Route path="*" element={<NoMatch />} />
           </Routes>
