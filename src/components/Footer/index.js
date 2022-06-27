@@ -8,7 +8,7 @@ function Footer() {
       <div className='text-center'>
         <a
             className='btn btn-link btn-floating btn-lg text-dark m-1'
-            href='#!'
+            href='https://twitter.com/'
             role='button'
             data-mdb-ripple-color='dark'
           >
@@ -16,7 +16,7 @@ function Footer() {
         </a>
         <a
             className='btn btn-link btn-floating btn-lg text-dark m-1'
-            href='#!'
+            href='https://www.google.com/'
             role='button'
             data-mdb-ripple-color='dark'
           >
@@ -24,7 +24,7 @@ function Footer() {
           </a>
           <a
             className='btn btn-link btn-floating btn-lg text-dark m-1'
-            href='#!'
+            href='https://github.com/KKWChao'
             role='button'
             data-mdb-ripple-color='dark'
           >
@@ -32,7 +32,7 @@ function Footer() {
           </a>
           <a
             className='btn btn-link btn-floating btn-lg text-dark m-1'
-            href='#!'
+            href='https://www.linkedin.com/in/kelvinkchao/'
             role='button'
             data-mdb-ripple-color='dark'
           >
@@ -40,10 +40,7 @@ function Footer() {
           </a>
       </div>
       <div className='text-center text-dark p-3' style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
-        © 2020 Copyright:
-        <a className='text-dark' href='https://mdbootstrap.com/'>
-          MDBootstrap.com
-        </a>
+        © 2022 Copyright: Kelvin Chao
       </div>
     </footer>
   )
