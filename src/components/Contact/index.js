@@ -38,7 +38,7 @@ function ContactForm() {
   // }
 
   return (
-    <section className="m-2 p-2">
+    <section className="m-2 p-2 d-flex flex-column min-vh-100">
       <h3>Contact me</h3>
       {/* <form id="contact-form" onSubmit={handleSubmit}>
         <div>
@@ -100,7 +100,7 @@ function ContactForm() {
           <Form.Group as={Col} md="4" controlId="formBasicEmail">
             <Form.Label>Email address</Form.Label>
             <Form.Control 
-              required
+              required pattern='[a-z0-9]+@[a-z]+\.[a-z]{2,3}'
               type="email" 
               placeholder="Enter email"
               />
@@ -113,8 +113,8 @@ function ContactForm() {
 
         <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
           <Form.Label>Message</Form.Label>
-          <Form.Control as="textarea" rows={3} 
-            required pattern=".+@.+\.com"
+          <Form.Control as="textarea" rows={5} 
+            required
             type="text"
             placeholder="Enter your message here!"
             />

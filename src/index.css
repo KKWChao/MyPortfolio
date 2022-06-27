@@ -6,6 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--color3) !important;
+  margin-bottom: 6rem;
 }
 
 code {
@@ -19,6 +20,29 @@ code {
   --color3: #F5F1ED;
   --color4: #DAD2BC;
   --color5: #A99985;
+}
+
+/* BUTTONS */
+/* need to find way to override primary color */
+.buttonPrimary {
+  background-color: var(--color2) !important;
+  border: var(--color2) !important;
+  align-self: center;
+}
+
+.buttonPrimary:hover {
+  background-color: var(--color5) !important;
+}
+
+.buttonPrimary:active {
+  background-color: var(--color4) !important;
+}
+
+/* HOME */
+.jumbotron {
+  background-image: url('../public/pexels-paul-ijsendoorn-33041.jpg');
+  background-size: cover;
+  border-radius: 0.5em;
 }
 
 /* NAV ITEMS */
@@ -54,20 +78,6 @@ code {
 
 }
 
-/* need to find way to override primary color */
-.buttonPrimary {
-  background-color: var(--color2) !important;
-  border: var(--color2) !important;
-  align-self: center;
-}
-
-.buttonPrimary:hover {
-  background-color: var(--color4) !important;
-}
-
-.buttonPrimary:active {
-  background-color: var(--color5) !important;
-}
 
 
 /* NOMATCH PAGE */
@@ -77,4 +87,11 @@ code {
   align-items: center;
   min-height: 100vh;
 
+}
+
+/* FOOTER */
+.footer {
+  bottom: 0;
+  position: fixed;
+  width: 100%;
 }

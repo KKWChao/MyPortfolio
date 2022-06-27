@@ -1,12 +1,14 @@
 import React from "react";
 import { Row, Col, Card, Button } from "react-bootstrap";
 
-// auto card creater take in api?
+// auto card creater take in props
 // Work in progress
-function ProjectCard(props) {
+const ProjectCard = (props) => {
+  // const [] = useState([])
+
   return (
     <Row xs={1} md={2} className="g-4">
-      {Array.from({ length: 4 }).map((_, idx) => (
+      {Array.from({ length: 6 }).map((_, idx) => (
         <Col>
           <Card>
             <Card.Img variant="top" src="holder.js/100px160" />
@@ -27,7 +29,7 @@ function ProjectCard(props) {
 
 
 export const Projects = () => (
-  <section className="m-2 p-2">
+  <section className="m-2 p-2 d-flex flex-column min-vh-100">
     <h3>Projects</h3>
 
     <Row>
