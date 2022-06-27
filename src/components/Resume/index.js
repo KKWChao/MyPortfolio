@@ -1,5 +1,6 @@
 import React from "react";
 import { Jumbopart } from '../About'
+import { Button } from 'react-bootstrap'
 
 export const Resume = () => (
   
@@ -38,6 +39,10 @@ export const Resume = () => (
         <p><strong>University of California, Berkeley</strong> - Coding Bootcamp - July 2022</p> 
         <p><strong>University of California, Davis</strong> - B.Sc Statistics/Economics</p>
       </div>
+    </div>
+
+    <div className="text-center">
+      <Button className="buttonPrimary" onClick=""><a className="noDec" href="./DummyResume.docx" download>Download Full Resume</a></Button>
     </div>
   </section>
 )
