@@ -14,7 +14,7 @@ function Navigation() {
         <Navbar.Brand as={Link} to="/" className="nav-text nav-logo">KC</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ml-auto">
+          <Nav className="ms-auto">
             <Nav.Link as={Link} to="/" className="nav-text">Home</Nav.Link>
             <Nav.Link as={Link} to="/projects" className="nav-text">Projects</Nav.Link>
             <Nav.Link as={Link} to="/about" className="nav-text">About</Nav.Link>

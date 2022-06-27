@@ -21,6 +21,8 @@ code {
   --color5: #A99985;
 }
 
+/* NAV ITEMS */
+
 .nav-logo {
   border: 2px solid;
   padding: 0.5em;
@@ -37,4 +39,42 @@ code {
 
 .navbar-toggler {
   background-color: var(--color3) !important;
+}
+
+/* PROJECT PAGE */
+
+.noDec {
+  text-decoration: none;
+  color: var(--color3)
+}
+
+.noDec:hover {
+  text-decoration: none;
+  color: var(--color1)
+
+}
+
+/* need to find way to override primary color */
+.buttonPrimary {
+  background-color: var(--color2) !important;
+  border: var(--color2) !important;
+  align-self: center;
+}
+
+.buttonPrimary:hover {
+  background-color: var(--color4) !important;
+}
+
+.buttonPrimary:active {
+  background-color: var(--color5) !important;
+}
+
+
+/* NOMATCH PAGE */
+.nomatch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
 }
