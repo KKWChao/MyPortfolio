@@ -19,6 +19,7 @@ function App() {
         <Layout>
           <Routes>
             <Route path="/" element={<About />} />
+            <Route path="/MyPortfolio" element={<About />} />
 
             <Route path="/projects" element={<Projects />} />
 
