@@ -78,7 +78,10 @@ code {
 
 }
 
-
+.cardImage {
+  width: auto;
+  height: 15rem;
+}
 
 /* NOMATCH PAGE */
 .nomatch {
@@ -95,3 +98,4 @@ code {
   position: fixed;
   width: 100%;
 }
+
