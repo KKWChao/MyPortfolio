@@ -15,10 +15,10 @@ function Navigation() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link as={Link} to="/" className="nav-text">About</Nav.Link>
-            <Nav.Link as={Link} to="/projects" className="nav-text">Projects</Nav.Link>
-            <Nav.Link as={Link} to="/resume" className="nav-text">Resume</Nav.Link>
-            <Nav.Link as={Link} to="/contact" className="nav-text">Contact</Nav.Link>
+            <Nav.Link as={Link} to="/MyPortfolio/" className="nav-text">About</Nav.Link>
+            <Nav.Link as={Link} to="/MyPortfolio/projects" className="nav-text">Projects</Nav.Link>
+            <Nav.Link as={Link} to="/MyPortfolio/resume" className="nav-text">Resume</Nav.Link>
+            <Nav.Link as={Link} to="/MyPortfolio/contact" className="nav-text">Contact</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

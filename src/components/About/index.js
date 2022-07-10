@@ -11,7 +11,7 @@ export function Jumbopart() {
       <h1>Hello, world!</h1>
       <p>
         <Button className="primary buttonPrimary">
-          <Nav.Link as={Link} to="/projects" className="nav-text">See My Projects!</Nav.Link>
+          <Nav.Link as={Link} to="/MyPortfolio/projects" className="nav-text">See My Projects!</Nav.Link>
         </Button>
       </p>
     </div>
